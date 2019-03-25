@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function blinktext() {
+                var blink = document.getElementById('announcement1');
+                setInterval(function() {
+                  blink.style.visibility = (blink.style.visibility == 'hidden' ? '' : 'hidden');
+                }, 1000);
+              }
+        </script>
+    </head>
+    <body onload="blinktext();">
+        <div class="flex-container" id="myHeader">
+            <div class="content" style="justify-content: flex-start"> 
+                <div><img src="acheron.jpg.jpg"></div>
+            </div>
+            <div class="flex-container" style="flex-grow: 8">
+                <div> HOME</div>
+                <div>ABOUT US</div>
+                <div><a href="login.html" style=text-decoration:none;color:black;>LOGIN</a></div>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function() {headerConstant()};
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            function headerConstant() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+        <hr>
+        <div class="marker">
+            <div align="center"> <h3> Business Objectives</h3></div> 
+                <div align="center">
+                    At Acheron, we aim to provide solutions which are designed to help our Customers, take advantage of the Opportunities offered thorough digital revolution. We connect information across the enterprise with the people and systems with our Products, services and User experiences. Our solutions which are on top of PSA, manages the entire content lifecycle with workflows and features for distribution and publishing the assets. Our PSA, further helps in automating the business process thereby fixing, the business challenges from a single platform.
+                </div>
+            </div>
+        <hr>
+        <div class="marker">
+            <div align="center"> <h3> What We Offer</h3></div> 
+                <div align="center">
+                    We are a Product & Services Company specialized in the OpenText Products like Process Suite, Media Management, Creative Review, Content Server etc. Following are some of our Product offerings
+                </div>
+            <div class="partition-flex-container" align="center">
+            <div><a href="product.html#mpm" style=color:black;><img src="mpm.jpg">Media Project Management</a><br>
+                <a href="product.html#mpm"id="announcement1" align="center"  style=text-decoration:none;color:red>Download <span><b>MPM Release 16.5 Highlights</b></span></a>
+            </div>
+            <div><a href="product.html#mlr" style=color:black;><img src="note-2.png">MLR for Life Sciences</a></div>
+            <div>Request Management</div>
+            <div>Action Management</div>
+            <div>Audit / Insurance Management</div>
+            <div>Process Suite Accelerator</div>
+            <div>Purchase Order Approval Management</div>
+            <div>Mobile Solutions – Appworks</div>
+            <div>External User provisioning</div>
+            <div>Download White Paper</div>
+            <div>MLR for Life Sciences</div>
+            <div>Incident Management</div>
+            <div>Corrective Action Reports</div>
+            <div>EHS Package</div>
+            <div>Safety Imaging Package</div>
+            <div>Translations Workflow</div>
+            <div><img src="file.png">Digitize Docs</div>
+            <div></div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="flex-footcontainer">
+            <div><u>Company</u><br>
+                About us<br>
+                Products<br>
+                Cloud<br>
+                Services<br>
+                Careers
+            </div>
+        <div><u>Social</u><br>
+                <i style="font-size:24px" class="fa" style=color:black;>&#xf0e1;</i>&nbsp;&nbsp;<a href="https://www.linkedin.com/company/acheron-software-consultancy/" style=text-decoration:none;color:black; target="_blank">LinkedIn</a><br>
+                <i  style="font-size:24px" class="fa">&#xF082;</i>&nbsp;&nbsp;<a href="https://www.facebook.com/AcheronTechnologies/?ref=br_rs" style=text-decoration:none;color:black; target="_blank">Facebook</a><br>
+        </div>
+        <div ><u>Contact</u><br>
+            <div class="flex1">
+            <div >
+              <b>Hyderabad Office</b><br>
+                Office No - 416,<br>
+                Manjeera Majestic Commercial,<br>
+                KPHB Road,<br>
+                Kukatpally, Hyderabad- 500085,<br>
+                Telangana, India<br>
+                +91 40 4855 1939<br>
+            </div>
+            <div>
+            <b> Coimbatore Office</b><br>
+                Office No - 112, Third Floor<br>
+                5th Street, Extn,<br>
+                100 Feet Road, Gandhipuram,<br>
+                Coimbatore- 641012,<br>
+                Tamil Nadu, India.<br>
+                +91 422 420 3619
+            </div>  
+            </div>
+        </div>
+</footer>
+</body>
+</html>

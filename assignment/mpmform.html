@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Acme Web Design</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 align="center">MPM Release 16.5 Highlights</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Acheron Web Design</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> 100 feet road</li><br>
+          <li><i class="fa fa-phone"></i> +91 4048551939</li><br>
+          <li><i class="fa fa-envelope"></i> contact@acheron-tech.com</li><br>
+        </ul>
+      </div>
+      <div class="contact">
+        <h5 color="blue">Kindly submit your information to view the MPM Product Highlights.We appreciate your patience.</h5>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>FirstName<span class="mandatory">*</span></label>
+            <input type="text" name="fname" id="fname" required>
+          </p>
+          <p>
+            <label>LastName<span class="mandatory">*</span></label>
+            <input type="text" name="lname" id="lname" required>
+          </p>
+          <p>
+            <label>Contact<span class="mandatory">*</span></label>
+            <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+       required>
+            <!--<input type="text" name="contact" id="contact" placeholder="+1XXXXXXXXXX" required>-->
+          </p>
+          <p>
+            <label>Email Address<span class="mandatory">*</span></label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Company<span class="mandatory">*</span></label>
+            <input type="text" name="company" id="company" required>
+          </p>
+          
+          <p>
+            <label>Country<span class="mandatory">*</span></label>
+            <input type="text" name="country" id="country" required>
+          </p>
+          <p >
+            <label>Interest In<span class="mandatory">*</span></label>
+            <select name="interest" id="interest" required>
+                <option value="Select" selected></option>
+                <option value="demo" >Demo</option>
+                <option value="contact me" >Contact me</option>
+                <option value="plan to purchase" >Plan to purchase</option>
+                <option value="price quote" >Price quote</option>
+                <option value="research" >Research</option>
+                <option value="no need at this time" >No need at this time</option>
+            </select>
+          </p>
+          <p >
+            <label>Job Function/Role<span class="mandatory">*</span></label>
+            <select name="jobfunction" id="jobfunction" required>
+                <option value="Select" selected></option>
+                <option value="administrator" >Administrator</option>
+                <option value="business analyst" >Business Analyst</option>
+                <option value="consultant" >Consultant</option>
+                <option value="director" >Director</option>
+                <option value="executive" >Executive</option>
+                <option value="head of department" >Head of Department</option>
+                <option value="it manager" >IT Manager</option>
+                <option value="user" >User</option>
+                <option value="other" >Other</option>
+            </select>
+          </p>
+          <p class="full">
+              <div ><a href="product.html" class="button1">Close</a></div>
+              <div ><button type="submit" class="button1">Submit</button></div>
+           <!-- <button type="submit" >Submit</button>-->
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+ 
+  <script src="mpmform.js"></script>
+</body>
+</html>
